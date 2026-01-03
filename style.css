@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    /* Background Colors */
+    --bg-primary-color: #0c0c0c;
+
+    /* Text Colors */
+    --text-primary-color: #f0f0f0;
+
+    /* Spacing variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 48px;
+
+    /* Border colors */
+    --border-primary-color: #333333;
+
+    /* Border Radius */
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
+
+}
+
+html {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main,
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: var(--spacing-2xl);
+}
+
+section .infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 2px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
+}
