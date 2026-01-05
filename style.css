@@ -53,6 +53,10 @@ section {
 
 section {
     padding: var(--spacing-2xl);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--spacing-lg);
 }
 
 section .infos {
@@ -65,4 +69,9 @@ section .infos {
     padding: var(--spacing-sm) var(--spacing-md);
     border: 2px solid var(--border-primary-color);
     border-radius: var(--border-radius-sm);
+}
+
+.board {
+    border: 1px solid var(--border-primary-color);
+    flex-grow: 1;
 }
