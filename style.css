@@ -75,14 +75,11 @@ section .infos {
     border: 1px solid var(--border-primary-color);
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
 
 }
 
 .block {
-    width: 30px;
-    height: 30px;
     border: 1px solid var(--border-primary-color);
-
 }
