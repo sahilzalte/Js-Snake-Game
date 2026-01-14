@@ -13,6 +13,7 @@ body {
 :root {
     /* Background Colors */
     --bg-primary-color: #0c0c0c;
+    --bg-fill-color: #fdfdfc;
 
     /* Text Colors */
     --text-primary-color: #f0f0f0;
@@ -82,4 +83,8 @@ section .infos {
 
 .block {
     border: 1px solid var(--border-primary-color);
+}
+
+.fill{
+    background-color: var(--bg-fill-color);
 }
