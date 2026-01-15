@@ -14,6 +14,7 @@ body {
     /* Background Colors */
     --bg-primary-color: #0c0c0c;
     --bg-fill-color: #fdfdfc;
+    --bg-food-color: #ff0000;
 
     /* Text Colors */
     --text-primary-color: #f0f0f0;
@@ -52,6 +53,20 @@ section {
     height: 100%;
 }
 
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 section {
     padding: var(--spacing-2xl);
     display: flex;
@@ -85,6 +100,29 @@ section .infos {
     border: 1px solid var(--border-primary-color);
 }
 
-.fill{
+.fill {
     background-color: var(--bg-fill-color);
+}
+
+.food {
+    background-color: var(--bg-food-color);
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #35353587;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg)
 }
