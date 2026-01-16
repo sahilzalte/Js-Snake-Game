@@ -98,6 +98,7 @@ section .infos {
 
 .block {
     border: 1px solid var(--border-primary-color);
+    border-radius: 50%;
 }
 
 .fill {
@@ -120,9 +121,14 @@ section .infos {
     align-items: center;
 }
 
-.start-game {
+.start-game,
+.game-over {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-lg)
+}
+
+.game-over {
+    display: none;
 }
